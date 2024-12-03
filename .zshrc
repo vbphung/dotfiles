@@ -24,9 +24,6 @@ alias proj=~/Documents/Projects
 alias psn=~/Documents/Projects/Personal
 alias keys=~/Documents/Projects/Keys
 
-alias vcfg=~/.config/nvim
-alias tcfg=~/.config/tmux
-
 alias v=nvim
 alias h=helix
 alias t=~/.tmux.sh
