@@ -13,6 +13,7 @@ ln -s $DIR/.tmux.sh ~/.tmux.sh
 
 mkdir -p ~/.config/kitty
 ln -s $DIR/kitty.conf ~/.config/kitty/kitty.conf
+git clone git@github.com:davidmathers/tokyo-night-kitty-theme.git ~/.config/kitty/tokyonight
 
 rm -rf ~/.config/nvim
 rm -rf ~/.config/VSCodium
