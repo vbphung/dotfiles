@@ -20,3 +20,5 @@ rm -rf ~/.config/VSCodium
 
 git clone git@github.com:vbphung/lazy-config.git ~/.config/nvim
 git clone --branch linux git@github.com:vbphung/vscode-config.git ~/.config/VSCodium
+
+unzip $DIR/Input.zip -d ~/.local/share/fonts

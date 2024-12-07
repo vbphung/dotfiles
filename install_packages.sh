@@ -35,6 +35,14 @@ install ruby
 
 curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --quiet
 
+install clang
+
+install protobuf
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway@latest
+go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2@latest
+
 install bluez
 
 install evince
