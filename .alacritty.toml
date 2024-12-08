@@ -1,0 +1,17 @@
+[general]
+import = ["~/.config/alacritty/tokyonight/tokyo-night-storm.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.92
+
+[font]
+normal = { family = "Input Mono", style = "Regular" }
+size = 11
+offset = { x = 0, y = 2 }
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 1000
