@@ -37,6 +37,9 @@ go install \
     google.golang.org/protobuf/cmd/protoc-gen-go \
     google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
+# Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
 # Personal tools
 echo --- Install personal tools ---
 git clone git@github.com:vbphung/me.git $HOME/.me

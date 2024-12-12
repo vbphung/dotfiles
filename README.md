@@ -1,4 +1,6 @@
-# @vbphung's dotfiles
+# dotfiles
+
+<p align="center"><i>First rule of Arch Club - Tell everyone you use Arch</i></p>
 
 ## Usage
 
