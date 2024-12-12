@@ -1,0 +1,85 @@
+{
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[dockerfile]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[dotenv]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+  "[go]": {
+    "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": false
+  },
+  "[ignore]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[properties]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[proto3]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[rust]": {
+    "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.formatOnSave": true
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools",
+    "editor.formatOnSave": true
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "editor.formatOnSave": true
+  },
+  "catppuccin.accentColor": "flamingo",
+  "catppuccin.italicComments": false,
+  "catppuccin.italicKeywords": false,
+  "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Input Mono",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.lineHeight": 1.8,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "explorer.confirmDelete": false,
+  "files.associations": { "*.conf": "shellscript", "*.cql": "sql" },
+  "files.insertFinalNewline": true,
+  "git.openRepositoryInParentFolders": "never",
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "reek": { "useBundler": true },
+    "rubocop": { "useBundler": true }
+  },
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "security.workspace.trust.enabled": false,
+  "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
+  "sqltools.highlightQuery": false,
+  "terminal.integrated.fontSize": 15,
+  "vscode_custom_css.imports": [
+    "file:///home/jim/.dotfiles/vscodium/style.css"
+  ],
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 20
+}

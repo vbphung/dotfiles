@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
+
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+  font-family: Fira Code !important;
+}
+
+.monaco-editor-hover,
+.monaco-hover {
+  padding: 8px !important;
+  border-radius: 16px !important;
+  border: none !important;
+}
+
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  border: none !important;
+  background: transparent !important;
+}
+
+.titlebar-left {
+  justify-content: flex-end !important;
+  flex-grow: 1 !important;
+  width: auto !important;
+}
+
+.search-label {
+  font-family: Fira Code !important;
+  display: block;
+}
+
+.search-icon,
+.codicon-search::before,
+.codicon-arrow-right,
+.codicon-arrow-left,
+.titlebar-right > *,
+.left-items.items-container * {
+  display: none !important;
+}
+
+.command-center-center {
+  width: auto !important;
+}
+
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  padding: 8px !important;
+  border-radius: 12px !important;
+}
+
+.quick-input-filter .monaco-inputbox {
+  border-radius: 8px !important;
+  padding: 4px !important;
+  border: none !important;
+  font-family: Fira Code !important;
+  margin-bottom: 4px !important;
+}
+
+.statusbar-item,
+.statusbar-item .monaco-icon-label,
+.statusbar-item .monaco-icon-label .label-name,
+.statusbar-item .monaco-icon-label .label-description,
+.statusbar-item .monaco-action-bar,
+.statusbar-item .monaco-action-bar .action-item,
+.statusbar-item .monaco-action-bar .action-item .action-label,
+.tabs-container,
+.tabs-container .monaco-icon-label,
+.tabs-container .monaco-icon-label .label-name,
+.tabs-container .monaco-icon-label .label-description,
+.tabs-container .monaco-action-bar,
+.monaco-breadcrumbs,
+.monaco-breadcrumbs .monaco-breadcrumb-item,
+.monaco-breadcrumbs .monaco-breadcrumb-item .monaco-icon-label,
+.monaco-breadcrumbs .monaco-breadcrumb-item .monaco-icon-label .label-name,
+.monaco-breadcrumbs
+  .monaco-breadcrumb-item
+  .monaco-icon-label
+  .label-description,
+.monaco-icon-label-container .monaco-icon-name-container .label-name {
+  font-family: Fira Code !important;
+}
+
+#status\.notifications,
+#status\.editor\.eol,
+#status\.editor\.encoding,
+#status\.editor\.indentation,
+#status\.editor\.selection,
+#be5invis\.vscode-custom-css,
+.action-label.codicon.codicon-accounts-view-bar-icon,
+.action-label.codicon.codicon-settings-view-bar-icon,
+.composite.title.has-composite-bar .title-actions * {
+  display: none !important;
+}
+
+* {
+  border-color: transparent !important;
+}

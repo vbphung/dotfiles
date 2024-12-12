@@ -36,10 +36,7 @@ symlink $DIR/tmux/.tmux.sh $HOME/.tmux.sh
 symlink $DIR/nvim $XDG_CONFIG_HOME/nvim
 
 # Vscodium
-symlink $DIR/vscodium $XDG_CONFIG_HOME/VSCodium
+symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json
 
 # Node.js
 corepack enable pnpm
-
-# Personal tools
-mkdir -p $HOME/.me
