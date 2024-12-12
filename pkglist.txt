@@ -164,6 +164,7 @@ thunar-volman
 tldr
 tmux
 ttf-bitstream-vera
+ttf-dejavu
 tumbler
 unrar
 unzip

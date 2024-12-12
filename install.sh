@@ -2,18 +2,18 @@
 
 echo --- Install everything ---
 
-#  Essential packages
+# Essential packages
 echo --- Install extra packages ---
 pacman -S - <$DIR/pkglist.txt
 
-#  Essential  apps
+# Essential apps
 echo --- Install AUR packages ---
 yay -S - <$DIR/pkglist-aur.txt
 
-#   Oh-My-Zsh
+# Oh-My-Zsh
 echo --- Install Oh-My-Zsh ---
 if test ! $(which zsh); then
-    sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --silent
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
     echo --- Install Zsh plugins ---
     ZSH_PLUGIN=$HOME/.oh-my-zsh/custom/plugins
@@ -21,14 +21,15 @@ if test ! $(which zsh); then
     git clone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_PLUGIN/zsh-autosuggestions
 fi
 
-#  Tmux Plugin Manager
+# Tmux Plugin Manager
+echo --- Install Tmux Plugin Manager ---
 git clone git@github.com:tmux-plugins/tpm.git $HOME/.tmux/plugins/tpm
 
-#  Rust
+# Rust
 echo --- Install Rust ---
-curl --proto =https --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --quiet
+curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-#  gRPC
+# gRPC
 echo --- Install gRPC Gateway ---
 go install \
     github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway \
@@ -36,7 +37,7 @@ go install \
     google.golang.org/protobuf/cmd/protoc-gen-go \
     google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
-#  Personal tools
+# Personal tools
 echo --- Install personal tools ---
 git clone git@github.com:vbphung/me.git $HOME/.me
 cd $HOME/.me

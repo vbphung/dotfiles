@@ -20,25 +20,25 @@ export PATH=$PATH:$GOROOT/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 
-#   Directories
+# Directories
 alias proj=$HOME/Projects
 alias psn=$HOME/Projects/Personal
 alias keys=$HOME/Projects/Keys
 alias dropbox=$HOME/Dropbox
 
-#       Shortcuts
+# Shortcuts
 alias t=$HOME/.tmux.sh
 alias v=nvim
 alias c=codium
 
-#  Docker
-alias dcup="docker-compose up  --detach --build"
+# Docker
+alias dcup="docker-compose up --detach --build"
 alias dcdown="docker-compose down"
-alias dlogs="docker  logs -f"
+alias dlogs="docker logs -f"
 alias dclean="docker stop $(docker ps -aq) && docker rm --force $(docker ps -aq) && docker volume rm $(docker volume ls -qf dangling=true)"
 
-#  Git
-alias gclear=" git reset &&  git  clean -fd && git  checkout -- ."
-alias gcommit="git ad   . && git commit -m"
-alias gamend="git add . && git commit --amend "
+# Git
+alias gclear="git reset && git clean -fd && git checkout -- ."
+alias gcommit="git add . && git commit -m"
+alias gamend="git add . && git commit --amend"
 alias gpush="git push --force"

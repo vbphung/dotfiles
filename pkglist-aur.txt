@@ -1,9 +1,6 @@
 brave-bin
-classin-bin
-cloudflare-warp-bin
 dbvis
 dropbox
-gitflow-avh
 migrate
 nvm
 postman-bin
