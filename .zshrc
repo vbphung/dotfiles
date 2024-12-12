@@ -34,7 +34,7 @@ alias c=codium
 # Docker
 alias dcup="docker-compose up --detach --build"
 alias dcdown="docker-compose down"
-alias dlogs="docker logs -f"
+alias dlogs="docker logs --follow"
 alias dclean="docker stop $(docker ps -aq) && docker rm --force $(docker ps -aq) && docker volume rm $(docker volume ls -qf dangling=true)"
 
 # Git

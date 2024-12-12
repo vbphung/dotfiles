@@ -1,12 +1,18 @@
 # dotfiles
 
-<p align="center"><i>First rule of Arch Club - Tell everyone you use Arch</i></p>
-
-## Usage
+<p align="center">
+<img src="https://preview.redd.it/5wrrepvfky1a1.png?auto=webp&s=a71496a486ee875bdc39a3d43e9ba1edf13496b7" alt="Tyler Durden" style="width: 72%;">
+</p>
 
 ```shell
 git clone git@github.com:vbphung/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
-./ssh.sh
-./fresh.sh
+```
+
+```shell
+make ssh
+```
+
+```shell
+make fresh
 ```

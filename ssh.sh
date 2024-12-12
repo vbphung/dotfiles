@@ -2,7 +2,7 @@
 
 echo --- Generate SSH key ---
 
-ssh-keygen -t ed25519 -C $USER@$(hostname) -f $HOME/.ssh/id_ed25519
+ssh-keygen -t ed25519 -C "$USER@$(hostname)" -f $HOME/.ssh/id_ed25519
 
 eval $(ssh-agent -s)
 

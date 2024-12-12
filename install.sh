@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIR=$(pwd)
+
 echo --- Install everything ---
 
 # Essential packages

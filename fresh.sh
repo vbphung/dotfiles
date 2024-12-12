@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIR=$(pwd)
+
 echo --- Setup your Arch ---
 
 # Create directories
@@ -9,7 +11,7 @@ mkdir -p $HOME/Projects/Keys
 mkdir -p $HOME/Dropbox
 
 # Install everything
-./install.sh
+$DIR/install.sh
 
 # Apply configs
-./config.sh
+$DIR/config.sh
