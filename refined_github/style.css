@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
+
+* {
+  font-family: Fira Code, monospace !important;
+  font-feature-settings: "cv02", "ss03", "ss08", "zero";
+}
+
+pre,
+code,
+.blob-code,
+.blob-code-content,
+.blob-code-marker,
+.react-code-text {
+  font-size: 14px !important;
+}
