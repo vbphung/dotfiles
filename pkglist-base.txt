@@ -138,7 +138,6 @@ sof-firmware
 sudo
 sysfsutils
 systemd-sysvcompat
-telegram-desktop
 texinfo
 thunar
 thunar-archive-plugin
@@ -199,5 +198,4 @@ xorg-xinit
 xorg-xinput
 xorg-xkill
 xorg-xrandr
-xournalpp
 xterm

@@ -15,6 +15,7 @@ npm
 obsidian
 openssh
 ruby
+telegram-desktop
 tmux
 vlc
 yay
