@@ -6,7 +6,7 @@ echo --- Install everything ---
 
 # Essential packages
 echo --- Install extra packages ---
-pacman -S - <$DIR/pkglist.txt
+sudo pacman -S - <$DIR/pkglist.txt
 
 # Essential apps
 echo --- Install AUR packages ---
@@ -40,10 +40,10 @@ go install \
     google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
 # Ollama
+echo --- Install Ollama ---
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Personal tools
 echo --- Install personal tools ---
 git clone git@github.com:vbphung/me.git $HOME/.me
-cd $HOME/.me
 make install

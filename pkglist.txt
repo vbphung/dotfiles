@@ -1,6 +1,7 @@
 blueman
 bluez
 bluez-utils
+boost
 clang
 docker
 docker-compose
@@ -17,6 +18,8 @@ openssh
 ruby
 telegram-desktop
 tmux
+ttf-jetbrains-mono-nerd
 vlc
 yay
+zig
 zsh
