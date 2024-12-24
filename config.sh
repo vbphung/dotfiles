@@ -33,7 +33,7 @@ symlink $DIR/tmux/.tmux.conf $HOME/.tmux.conf
 symlink $DIR/tmux/.tmux.sh $HOME/.tmux.sh
 
 # Neovim
-symlink $DIR/nvim $XDG_CONFIG_HOME/nvim
+symlink $DIR/neovim $XDG_CONFIG_HOME/nvim
 
 # Vscodium
 symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json

@@ -1,0 +1,7 @@
+column_width = 120
+indent_width = 4
+indent_type = "Tabs"
+quote_style = "ForceDouble"
+
+[sort_requires]
+enabled = true
