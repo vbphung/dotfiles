@@ -15,8 +15,8 @@ export LANG=en_US.UTF-8
 
 # Go
 export GOPRIVATE=*
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
 
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin

@@ -6,10 +6,6 @@ source $DIR/utils.sh
 
 prettyecho Apply configs
 
-# Fonts
-prettyecho Install fonts
-unzip -oq $DIR/fonts/Input.zip -d $HOME/.local/share/fonts
-
 # Docker
 prettyecho Start Docker with systemd
 sudo systemctl start docker.service
@@ -41,6 +37,7 @@ symlink $DIR/neovim $XDG_CONFIG_HOME/nvim
 # Vscodium
 prettyecho Apply Vscodium configs
 symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json
+symlink $DIR/vscodium/keybindings.json $XDG_CONFIG_HOME/VSCodium/User/keybindings.json
 sudo chown -R $(whoami) /usr/share/vscodium
 
 # Node.js

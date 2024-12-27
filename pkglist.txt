@@ -18,6 +18,7 @@ openssh
 ruby
 telegram-desktop
 tmux
+ttf-intone-nerd
 ttf-jetbrains-mono-nerd
 vlc
 yay

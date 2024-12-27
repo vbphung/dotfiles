@@ -3,7 +3,11 @@ dbvis
 dropbox
 migrate
 nvm
+otf-intel-one-mono
 postman-bin
 protoc-gen-go
 ttf-apple-emoji
+ttf-intel-one-mono
 vscodium
+woff-intel-one-mono
+woff2-intel-one-mono

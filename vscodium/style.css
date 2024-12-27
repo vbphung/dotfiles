@@ -2,7 +2,7 @@
 
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: Input Mono Narrow, JetBrains Mono, monospace !important;
+  font-family: Intel One Mono, JetBrains Mono, monospace !important;
 }
 
 .monaco-editor-hover,
@@ -30,7 +30,7 @@
 }
 
 .search-label {
-  font-family: Input Mono Narrow, JetBrains Mono, monospace !important;
+  font-family: Intel One Mono, JetBrains Mono, monospace !important;
   display: block;
 }
 
@@ -58,7 +58,7 @@
   border-radius: 8px !important;
   padding: 4px !important;
   border: none !important;
-  font-family: Input Mono Narrow, JetBrains Mono, monospace !important;
+  font-family: Intel One Mono, JetBrains Mono, monospace !important;
   margin-bottom: 4px !important;
 }
 
@@ -83,7 +83,7 @@
   .monaco-icon-label
   .label-description,
 .monaco-icon-label-container .monaco-icon-name-container .label-name {
-  font-family: Input Mono Narrow, JetBrains Mono, monospace !important;
+  font-family: Intel One Mono, JetBrains Mono, monospace !important;
 }
 
 #status\.notifications,
