@@ -22,6 +22,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.cargo/bin
 
 # Directories
+alias dots=$HOME/.dotfiles
 alias proj=$HOME/Projects
 alias psn=$HOME/Projects/Personal
 alias keys=$HOME/Projects/Keys

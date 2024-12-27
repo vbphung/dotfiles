@@ -18,23 +18,23 @@ require("lazy").setup({
 	spec = {
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
 		{ import = "plugins" },
-		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.formatting.prettier" },
-		{ import = "lazyvim.plugins.extras.lang.json" },
-		{ import = "lazyvim.plugins.extras.lang.elixir" },
-		{ import = "lazyvim.plugins.extras.lang.go" },
-		{ import = "lazyvim.plugins.extras.lang.rust" },
-		{ import = "lazyvim.plugins.extras.lang.yaml" },
-		{ import = "lazyvim.plugins.extras.lang.cmake" },
 		{ import = "lazyvim.plugins.extras.lang.clangd" },
+		{ import = "lazyvim.plugins.extras.lang.cmake" },
 		{ import = "lazyvim.plugins.extras.lang.docker" },
-		{ import = "lazyvim.plugins.extras.lang.helm" },
-		{ import = "lazyvim.plugins.extras.lang.sql" },
-		{ import = "lazyvim.plugins.extras.lang.toml" },
-		{ import = "lazyvim.plugins.extras.lang.nix" },
+		{ import = "lazyvim.plugins.extras.lang.elixir" },
 		{ import = "lazyvim.plugins.extras.lang.git" },
-		{ import = "lazyvim.plugins.extras.lang.tex" },
+		{ import = "lazyvim.plugins.extras.lang.go" },
+		{ import = "lazyvim.plugins.extras.lang.helm" },
+		{ import = "lazyvim.plugins.extras.lang.json" },
+		{ import = "lazyvim.plugins.extras.lang.nix" },
 		{ import = "lazyvim.plugins.extras.lang.ruby" },
+		{ import = "lazyvim.plugins.extras.lang.rust" },
+		{ import = "lazyvim.plugins.extras.lang.sql" },
+		{ import = "lazyvim.plugins.extras.lang.tex" },
+		{ import = "lazyvim.plugins.extras.lang.toml" },
+		{ import = "lazyvim.plugins.extras.lang.typescript" },
+		{ import = "lazyvim.plugins.extras.lang.yaml" },
 		{ import = "lazyvim.plugins.extras.lang.zig" },
 		{
 			"folke/tokyonight.nvim",
@@ -91,6 +91,33 @@ require("lazy").setup({
 					},
 				}
 			end,
+		},
+		{
+			"neovim/nvim-lspconfig",
+			opts = {
+				inlay_hints = { enabled = false },
+				codelens = { enabled = false },
+				servers = {
+					lua_ls = {
+						settings = {
+							Lua = {
+								diagnostics = {
+									globals = {},
+								},
+							},
+						},
+					},
+					gopls = {
+						settings = {
+							gopls = {
+								analyses = {
+									fieldalignment = false,
+								},
+							},
+						},
+					},
+				},
+			},
 		},
 	},
 	defaults = {
