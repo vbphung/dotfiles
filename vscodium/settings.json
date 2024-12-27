@@ -78,7 +78,7 @@
     "file:///home/jim/.dotfiles/vscodium/style.css"
   ],
   "window.zoomLevel": 2,
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20

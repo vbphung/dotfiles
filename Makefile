@@ -10,6 +10,10 @@ fresh:
 	chmod +x ./fresh.sh ./install.sh ./config.sh
 	./fresh.sh
 
+install:
+	chmod +x ./install.sh
+	./install.sh	
+
 cfg:
 	chmod +x ./config.sh
 	./config.sh
@@ -18,4 +22,4 @@ ssh:
 	chmod +x ./ssh.sh
 	./ssh.sh
 
-.PHONY: list-pkgs base-pkgs fresh cfg ssh
+.PHONY: list-pkgs base-pkgs fresh install cfg ssh

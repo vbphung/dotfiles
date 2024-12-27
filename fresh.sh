@@ -2,10 +2,12 @@
 
 DIR=$(pwd)
 
-echo --- Setup your Arch ---
+source $DIR/utils.sh
+
+prettyecho Setup your Arch
 
 # Create directories
-echo --- Create directories ---
+prettyecho Create directories
 mkdir -p $HOME/Projects/Personal
 mkdir -p $HOME/Projects/Keys
 mkdir -p $HOME/Dropbox
