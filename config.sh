@@ -6,6 +6,10 @@ source $DIR/utils.sh
 
 prettyecho Apply configs
 
+# Install fonts
+prettyecho Install fonts
+unzip -oq $DIR/fonts/Input.zip -d $HOME/.local/share/fonts/Input
+
 # Docker
 prettyecho Start Docker with systemd
 sudo systemctl start docker.service

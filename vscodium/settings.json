@@ -1,4 +1,5 @@
 {
+  "Lua.diagnostics.globals": ["vim"],
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true,
@@ -19,6 +20,10 @@
     "editor.insertSpaces": false
   },
   "[ignore]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "editor.formatOnSave": true
+  },
   "[properties]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
   "[proto3]": {
     "editor.defaultFormatter": "xaver.clang-format",
@@ -76,7 +81,8 @@
   "sqltools.highlightQuery": false,
   "terminal.integrated.fontSize": 15,
   "vscode_custom_css.imports": [
-    "file:///home/jim/.dotfiles/vscodium/style.css"
+    "file:///home/jim/.dotfiles/vscodium/style.css",
+    "file:///Users/jim/.dotfiles/vscodium/style.css"
   ],
   "window.zoomLevel": 2,
   "workbench.colorTheme": "Catppuccin Macchiato",
