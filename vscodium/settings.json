@@ -51,6 +51,10 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml",
     "editor.formatOnSave": true
   },
+  "[zig]": {
+    "editor.defaultFormatter": "ziglang.vscode-zig",
+    "editor.formatOnSave": true
+  },
   "catppuccin.accentColor": "flamingo",
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
@@ -64,8 +68,13 @@
   "editor.lineHeight": 1.8,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 4,
   "explorer.confirmDelete": false,
-  "files.associations": { "*.conf": "shellscript", "*.cql": "sql" },
+  "files.associations": {
+    "*.conf": "shellscript",
+    "*.cql": "sql",
+    "config": "shellscript"
+  },
   "files.insertFinalNewline": true,
   "git.openRepositoryInParentFolders": "never",
   "redhat.telemetry.enabled": false,
@@ -88,5 +97,6 @@
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "zig.zls.enabled": "on"
 }

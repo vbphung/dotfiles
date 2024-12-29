@@ -27,7 +27,12 @@ symlink $DIR/.zshrc $HOME/.zshrc
 # Kitty
 prettyecho Apply Kitty configs
 symlink $DIR/kitty/kitty.conf $XDG_CONFIG_HOME/kitty/kitty.conf
-gitclone git@github.com:davidmathers/tokyo-night-kitty-theme.git $XDG_CONFIG_HOME/kitty/tokyonight
+gitclone git@github.com:folke/tokyonight.nvim.git $XDG_CONFIG_HOME/kitty/tokyonight
+
+# Ghostty
+prettyecho Apply Ghostty configs
+symlink $DIR/ghostty/config $XDG_CONFIG_HOME/ghostty/config
+symlink $XDG_CONFIG_HOME/kitty/tokyonight/extras/ghostty/tokyonight_moon $XDG_CONFIG_HOME/ghostty/themes/tokyonight_moon
 
 # Tmux
 prettyecho Apply Tmux configs

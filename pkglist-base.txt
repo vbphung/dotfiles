@@ -25,9 +25,9 @@ duf
 e2fsprogs
 efibootmgr
 efitools
+endeavouros-branding
 endeavouros-keyring
 endeavouros-mirrorlist
-endeavouros-theming
 endeavouros-xfce4-terminal-colors
 eos-apps-info
 eos-hooks

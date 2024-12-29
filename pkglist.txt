@@ -6,6 +6,7 @@ clang
 docker
 docker-compose
 evince
+ghostty
 git
 gnome-keyring
 go
