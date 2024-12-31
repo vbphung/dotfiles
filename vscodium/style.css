@@ -1,8 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap);
+:root {
+  --ui-font-family: Intel One Mono, monospace;
+}
 
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: Intel One Mono, JetBrains Mono, monospace !important;
+  font-family: var(--ui-font-family) !important;
 }
 
 .monaco-editor-hover,
@@ -30,7 +32,7 @@
 }
 
 .search-label {
-  font-family: Intel One Mono, JetBrains Mono, monospace !important;
+  font-family: var(--ui-font-family) !important;
   display: block;
 }
 
@@ -58,7 +60,7 @@
   border-radius: 8px !important;
   padding: 4px !important;
   border: none !important;
-  font-family: Intel One Mono, JetBrains Mono, monospace !important;
+  font-family: var(--ui-font-family) !important;
   margin-bottom: 4px !important;
 }
 
@@ -83,7 +85,7 @@
   .monaco-icon-label
   .label-description,
 .monaco-icon-label-container .monaco-icon-name-container .label-name {
-  font-family: Intel One Mono, JetBrains Mono, monospace !important;
+  font-family: var(--ui-font-family) !important;
 }
 
 #status\.notifications,

@@ -18,8 +18,33 @@ cfg:
 	chmod +x ./config.sh
 	./config.sh
 
+osx-list-pkgs:
+	brew bundle dump --file=Brewfile --force
+
+osx-fresh:
+	chmod +x ./osx_fresh.sh  ./osx_install.sh  ./osx_config.sh	
+	./osx-fresh.sh		
+
+osx-install:	
+	chmod +x ./osx_install.sh
+	./osx_install.sh	
+
+osx-cfg:
+	chmod +x ./osx_config.sh
+	./osx_config.sh		
+
 ssh:
 	chmod +x ./ssh.sh
 	./ssh.sh
 
-.PHONY: list-pkgs base-pkgs fresh install cfg ssh
+.PHONY: \
+	list-pkgs \
+	base-pkgs \
+	fresh \
+	install \
+	cfg \
+	osx-list-pkgs \
+	osx-fresh \
+	osx-install \
+	osx-cfg \
+	ssh

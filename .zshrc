@@ -13,6 +13,9 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Brew
+export PATH=$PATH:/opt/homebrew/bin
+
 # Go
 export GOPRIVATE=*
 export GOPATH=$HOME/.go
@@ -20,6 +23,9 @@ export PATH=$PATH:$GOPATH/bin
 
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
+
+# Ruby
+export GEM_HOME=$HOME/.gem
 
 # Directories
 alias dots=$HOME/.dotfiles
