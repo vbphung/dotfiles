@@ -60,7 +60,7 @@
   "catppuccin.italicKeywords": false,
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Intel One Mono",
+  "editor.fontFamily": "Cascadia Code",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
@@ -78,13 +78,6 @@
   "files.insertFinalNewline": true,
   "git.openRepositoryInParentFolders": "never",
   "redhat.telemetry.enabled": false,
-  "ruby.format": "rubocop",
-  "ruby.lint": {
-    "reek": { "useBundler": true },
-    "rubocop": { "useBundler": true }
-  },
-  "ruby.useBundler": true,
-  "ruby.useLanguageServer": true,
   "security.workspace.trust.enabled": false,
   "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
   "sqltools.highlightQuery": false,

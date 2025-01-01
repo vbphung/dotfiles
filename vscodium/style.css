@@ -1,5 +1,5 @@
 :root {
-  --ui-font-family: Intel One Mono, monospace;
+  --ui-font-family: Cascadia Code, monospace;
 }
 
 .monaco-tree .monaco-tree-row .label-name,

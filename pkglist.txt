@@ -19,6 +19,8 @@ openssh
 ruby
 telegram-desktop
 tmux
+ttf-cascadia-code
+ttf-cascadia-code-nerd
 ttf-intone-nerd
 ttf-jetbrains-mono-nerd
 vlc

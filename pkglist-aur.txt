@@ -1,3 +1,4 @@
+balena-etcher
 brave-bin
 dbvis
 dropbox
