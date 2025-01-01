@@ -3,12 +3,10 @@ font-family-bold = Input Mono
 font-family-italic = Input Mono
 font-family-bold-italic = Input Mono
 
-font-style = medium
-font-style-bold = bold
-font-style-italic = medium italic
-font-style-bold-italic = bold italic
+font-style-bold = medium
+font-style-bold-italic = medium italic
 
-font-size = 17
+font-size = 14
 adjust-cell-height = 10%
 
 scrollback-limit = 8192
@@ -26,8 +24,8 @@ gtk-tabs-location = top
 window-padding-x = 16
 window-padding-balance = true
 window-decoration = false
-window-height = 64
-window-width = 256
+window-height = 48
+window-width = 128
 
 theme = gruvbox-material
 background-opacity = 0.92
