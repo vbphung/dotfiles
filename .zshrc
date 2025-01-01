@@ -25,6 +25,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.cargo/bin
 
 # Ruby
+export PATH=$PATH:/opt/homebrew/opt/ruby/bin
 export GEM_HOME=$HOME/.gem
 
 # Directories

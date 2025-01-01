@@ -12,7 +12,7 @@ fresh:
 
 install:
 	chmod +x ./install.sh
-	./install.sh	
+	./install.sh
 
 cfg:
 	chmod +x ./config.sh
@@ -22,16 +22,16 @@ osx-list-pkgs:
 	brew bundle dump --file=Brewfile --force
 
 osx-fresh:
-	chmod +x ./osx_fresh.sh  ./osx_install.sh  ./osx_config.sh	
-	./osx-fresh.sh		
+	chmod +x ./osx_fresh.sh ./osx_install.sh ./osx_config.sh
+	./osx_fresh.sh
 
-osx-install:	
+osx-install:
 	chmod +x ./osx_install.sh
-	./osx_install.sh	
+	./osx_install.sh
 
 osx-cfg:
 	chmod +x ./osx_config.sh
-	./osx_config.sh		
+	./osx_config.sh
 
 ssh:
 	chmod +x ./ssh.sh

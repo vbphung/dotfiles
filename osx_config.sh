@@ -2,15 +2,16 @@
 
 DIR=$(pwd)
 CONFIG_HOME=$HOME/.config
-
-# Apple's Application Support is an absolute piece of shit
-APP_SUPPORT=$HOME/Library/applicationsupport
-rm -rf $APP_SUPPORT
-ln -s $HOME/Library/Application\ Support $APP_SUPPORT
+APP_SUPPORT=$HOME/Library/ApplicationSupport
 
 source $DIR/utils.sh
 
 prettyecho Apply configs
+
+# Apple's Application Support is an absolute piece of shit
+prettyecho Symbolic link for Application Support
+rm -rf $APP_SUPPORT
+ln -s $HOME/Library/Application\ Support $APP_SUPPORT
 
 # Install fonts
 prettyecho Install fonts
@@ -53,3 +54,9 @@ sudo chown -R $(whoami) /Applications/VSCodium.app/Contents/MacOS/Electron
 # Node.js
 prettyecho Enable pnpm
 corepack enable pnpm
+
+# Ruby
+prettyecho Update RubyGems
+export PATH=$PATH:/opt/homebrew/opt/ruby/bin
+export GEM_HOME=$HOME/.gem
+gem update --system

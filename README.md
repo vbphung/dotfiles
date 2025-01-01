@@ -14,5 +14,6 @@ make ssh
 ```
 
 ```shell
-make fresh
+make fresh # for EndeavourOS (Arch)
+make osx-fresh # for macOS
 ```
