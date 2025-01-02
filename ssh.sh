@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIR=$(pwd)
+
 source $DIR/utils.sh
 prettyecho Generate SSH key
 

@@ -45,7 +45,6 @@ f2fs-tools
 ffmpegthumbnailer
 file-roller
 firewalld
-fsarchiver
 galculator
 garcon
 glances
@@ -100,13 +99,12 @@ networkmanager-openconnect
 networkmanager-openvpn
 nfs-utils
 nilfs-utils
+noto-fonts
+noto-fonts-cjk
+noto-fonts-extra
 nss-mdns
 ntfs-3g
 ntp
-nvidia
-nvidia-hook
-nvidia-inst
-otf-overpass-nerd
 pacman-contrib
 parole
 pavucontrol
@@ -123,12 +121,12 @@ python
 python-capng
 python-defusedxml
 python-packaging
-python-pip
 python-pyqt5
 rebuild-detector
 reflector
 reflector-simple
 reiserfsprogs
+ristretto
 rsync
 rtkit
 sg3_utils
@@ -154,7 +152,6 @@ unzip
 upower
 usb_modeswitch
 usbutils
-vegeta
 vi
 welcome
 wget

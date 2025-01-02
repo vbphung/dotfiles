@@ -12,18 +12,17 @@ sudo pacman -S --noconfirm - <$DIR/pkglist.txt
 
 # Essential apps
 prettyecho Install AUR packages
-yay -S --answerdiff None --answerclean All --noconfirm --removemake - <$DIR/pkglist-aur.txt
+yay -S --answerdiff None --answerclean None --noconfirm - <$DIR/pkglist-aur.txt
 
 # Oh-My-Zsh
 prettyecho Install Oh-My-Zsh
-if test ! $(which zsh); then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+prepare $HOME/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-    prettyecho Install Zsh plugins
-    ZSH_PLUGIN=$HOME/.oh-my-zsh/custom/plugins
-    gitclone git@github.com:zsh-users/zsh-syntax-highlighting.git $ZSH_PLUGIN/zsh-syntax-highlighting
-    gitclone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_PLUGIN/zsh-autosuggestions
-fi
+prettyecho Install Zsh plugins
+ZSH_PLUGIN=$HOME/.oh-my-zsh/custom/plugins
+gitclone git@github.com:zsh-users/zsh-syntax-highlighting.git $ZSH_PLUGIN/zsh-syntax-highlighting
+gitclone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_PLUGIN/zsh-autosuggestions
 
 # Tmux Plugin Manager
 prettyecho Install Tmux Plugin Manager

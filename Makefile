@@ -37,6 +37,13 @@ ssh:
 	chmod +x ./ssh.sh
 	./ssh.sh
 
+GOINSTALL := GOEXPERIMENT=loopvar GO111MODULE=on go install -ldflags="-s -w" -v
+PKG := github.com/vbphung/dotfiles/me
+
+install-me:
+	cd $(PWD)/me && \
+	$(GOINSTALL) $(PKG)
+
 .PHONY: \
 	list-pkgs \
 	base-pkgs \
@@ -47,4 +54,5 @@ ssh:
 	osx-fresh \
 	osx-install \
 	osx-cfg \
-	ssh
+	ssh \
+	install-me

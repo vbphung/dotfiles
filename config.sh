@@ -8,6 +8,7 @@ prettyecho Apply configs
 
 # Install fonts
 prettyecho Install fonts
+prepare $HOME/.local/share/fonts/Input
 unzip -oq $DIR/fonts/Input.zip -d $HOME/.local/share/fonts/Input
 
 # Docker
@@ -47,8 +48,9 @@ symlink $DIR/neovim $XDG_CONFIG_HOME/nvim
 prettyecho Apply Vscodium configs
 symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json
 symlink $DIR/vscodium/keybindings.json $XDG_CONFIG_HOME/VSCodium/User/keybindings.json
+symlink $DIR/vscodium/product.json $XDG_CONFIG_HOME/VSCodium/product.json
 sudo chown -R $(whoami) /usr/share/vscodium
 
 # Node.js
 prettyecho Enable pnpm
-corepack enable pnpm
+sudo corepack enable pnpm
