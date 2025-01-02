@@ -10,6 +10,7 @@ prettyecho Apply configs
 prettyecho Install fonts
 prepare $HOME/.local/share/fonts/Input
 unzip -oq $DIR/fonts/Input.zip -d $HOME/.local/share/fonts/Input
+symlink $DIR/fonts/fonts.xml $XDG_CONFIG_HOME/fontconfig/fonts.conf
 
 # Docker
 prettyecho Start Docker with systemd

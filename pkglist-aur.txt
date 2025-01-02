@@ -1,6 +1,7 @@
 balena-etcher
 brave-bin
 dbvis
+discord-ptb
 dropbox
 migrate
 nvm

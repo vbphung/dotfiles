@@ -91,5 +91,6 @@
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
+  "xml.validation.enabled": false,
   "zig.zls.enabled": "on"
 }
