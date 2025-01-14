@@ -1,12 +1,12 @@
-font-family = Cascadia Code
-font-family-bold = Cascadia Code
-font-family-italic = Cascadia Code
-font-family-bold-italic = Cascadia Code
+font-family = monospace
+font-family-bold = monospace
+font-family-italic = monospace
+font-family-bold-italic = monospace
 
 font-style-bold = medium
 font-style-bold-italic = medium italic
 
-font-size = 17
+font-size = 12
 adjust-cell-height = 10%
 
 scrollback-limit = 8192

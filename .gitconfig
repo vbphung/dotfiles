@@ -5,5 +5,8 @@ name = vbphung
 [pull]
 rebase = true
 
+[core]
+editor = nano
+
 [url "ssh://git@github.com/"]
 insteadOf = https://github.com/

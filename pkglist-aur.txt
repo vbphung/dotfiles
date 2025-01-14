@@ -1,16 +1,9 @@
 balena-etcher
-brave-bin
 dbvis
 discord-ptb
 dropbox
 migrate
-nvm
-otf-intel-one-mono
+otf-avenir-next-pro
 postman-bin
 protoc-gen-go
-python-future
 ttf-apple-emoji
-ttf-intel-one-mono
-vscodium
-woff-intel-one-mono
-woff2-intel-one-mono

@@ -14,7 +14,7 @@
             <string>monospace</string>
         </test>
         <edit mode="assign" name="family" binding="same">
-            <string>JetBrains Mono</string>
+            <string>MesloLGM Nerd Font</string>
         </edit>
     </match>
 </fontconfig>

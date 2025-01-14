@@ -12,6 +12,7 @@ sudo pacman -S --noconfirm - <$DIR/pkglist.txt
 
 # Essential apps
 prettyecho Install AUR packages
+sudo pacman -Rns --noconfirm noto-fonts-emoji
 yay -S --answerdiff None --answerclean None --noconfirm - <$DIR/pkglist-aur.txt
 
 # Oh-My-Zsh
@@ -42,4 +43,8 @@ go install \
 
 # Ollama
 prettyecho Install Ollama
-curl -fsSL https://ollama.com/install.sh | sh
+if test ! $(which ollama); then
+    curl -fsSL https://ollama.com/install.sh | sh
+else
+    prettyecho Ollama already installed
+fi

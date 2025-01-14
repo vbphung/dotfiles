@@ -18,15 +18,15 @@ export PATH=$PATH:/opt/homebrew/bin
 
 # Go
 export GOPRIVATE=*
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 
 # Ruby
-export PATH=$PATH:/opt/homebrew/opt/ruby/bin
 export GEM_HOME=$HOME/.gem
+export PATH=$PATH:$GEM_HOME/ruby/3.0.0/bin
 
 # Directories
 alias dots=$HOME/.dotfiles
@@ -51,3 +51,8 @@ alias gclear="git reset && git clean -fd && git checkout -- ."
 alias gcommit="git add . && git commit -m"
 alias gamend="git add . && git commit --amend"
 alias gpush="git push --force"
+
+# Pyenv
+export PYENV_ROOT=$HOME/.pyenv
+[[ -d $PYENV_ROOT/bin ]] && export PATH=$PATH:$PYENV_ROOT/bin
+eval "$(pyenv init - zsh)"
