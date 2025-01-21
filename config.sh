@@ -7,9 +7,7 @@ source $DIR/utils.sh
 prettyecho Apply configs
 
 # Install fonts
-prettyecho Install fonts
-prepare $HOME/.local/share/fonts/Input
-unzip -oq $DIR/fonts/Input.zip -d $HOME/.local/share/fonts/Input
+prettyecho Apply fonts configs
 symlink $DIR/fonts/fonts.xml $XDG_CONFIG_HOME/fontconfig/fonts.conf
 
 # Docker
@@ -50,7 +48,13 @@ prettyecho Apply Vscodium configs
 symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json
 symlink $DIR/vscodium/keybindings.json $XDG_CONFIG_HOME/VSCodium/User/keybindings.json
 symlink $DIR/vscodium/product.json $XDG_CONFIG_HOME/VSCodium/product.json
-sudo chown -R $(whoami) /usr/share/vscodium
+
+sudo chown -R $(whoami) $(which codium)
+sudo chown -R $(whoami) $(which vscodium)
+
+# Xfce
+prettyecho Apply Xfce configs
+symlink $DIR/xfce4/keyboard_shortcuts.xml $XDG_CONFIG_HOME/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 
 # Node.js
 prettyecho Enable pnpm
