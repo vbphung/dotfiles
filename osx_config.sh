@@ -13,10 +13,6 @@ prettyecho Symbolic link for Application Support
 rm -rf $APP_SUPPORT
 ln -s $HOME/Library/Application\ Support $APP_SUPPORT
 
-# Install fonts
-prettyecho Install fonts
-unzip -oq $DIR/fonts/Input.zip -d $HOME/Library/Fonts/Input
-
 # Git
 prettyecho Apply Git configs
 symlink $DIR/.gitconfig $HOME/.gitconfig
@@ -57,6 +53,6 @@ corepack enable pnpm
 
 # Ruby
 prettyecho Update RubyGems
-export PATH=$PATH:/opt/homebrew/opt/ruby/bin
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 export GEM_HOME=$HOME/.gem
 gem update --system

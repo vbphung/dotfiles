@@ -14,19 +14,20 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Brew
-export PATH=$PATH:/opt/homebrew/bin
+export PATH=/opt/homebrew/bin:$PATH
 
 # Go
 export GOPRIVATE=*
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 # Rust
-export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$HOME/.cargo/bin:$PATH
 
 # Ruby
 export GEM_HOME=$HOME/.gem
-export PATH=$PATH:$GEM_HOME/ruby/3.0.0/bin
+export PATH=$GEM_HOME/ruby/3.0.0/bin:$PATH
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 # Directories
 alias dots=$HOME/.dotfiles
@@ -54,5 +55,11 @@ alias gpush="git push --force"
 
 # Pyenv
 export PYENV_ROOT=$HOME/.pyenv
-[[ -d $PYENV_ROOT/bin ]] && export PATH=$PATH:$PYENV_ROOT/bin
+[[ -d $PYENV_ROOT/bin ]] && export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init - zsh)"
+
+# Clang
+export PATH=/opt/homebrew/opt/llvm/bin:$PATH
+cpprun() {
+    clang++ -std=c++17 $1 -o out && ./out && rm -rf ./out
+}

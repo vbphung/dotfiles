@@ -6,7 +6,7 @@ font-family-bold-italic = monospace
 font-style-bold = medium
 font-style-bold-italic = medium italic
 
-font-size = 11
+font-size = 16
 adjust-cell-height = 10%
 
 scrollback-limit = 8192
@@ -23,9 +23,9 @@ gtk-tabs-location = top
 
 window-padding-x = 16
 window-padding-balance = true
-window-decoration = false
-window-height = 64
-window-width = 256
+window-decoration = true
+window-height = 48
+window-width = 128
 
 theme = gruvbox-material
 background-opacity = 0.92
