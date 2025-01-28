@@ -58,6 +58,7 @@
   "catppuccin.accentColor": "flamingo",
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
+  "clangd.detectExtensionConflicts": false,
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "monospace",
@@ -73,6 +74,7 @@
   "files.associations": {
     "*.conf": "shellscript",
     "*.cql": "sql",
+    ".clangd": "yaml",
     "config": "shellscript"
   },
   "files.insertFinalNewline": true,
