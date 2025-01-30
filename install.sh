@@ -39,11 +39,3 @@ go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway@lat
 go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2@latest
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-
-# Ollama
-prettyecho Install Ollama
-if test ! $(which ollama); then
-    curl -fsSL https://ollama.com/install.sh | sh
-else
-    prettyecho Ollama already installed
-fi

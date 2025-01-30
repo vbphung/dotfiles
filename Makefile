@@ -44,13 +44,6 @@ install-me:
 	cd $(PWD)/me && \
 	$(GOINSTALL) $(PKG)
 
-MODELS := deepseek-r1:7b llama3.2
-
-ollama-install:
-	for model in $(MODELS); do \
-		ollama pull $$model; \
-	done
-
 .PHONY: \
 	list-pkgs \
 	base-pkgs \
@@ -62,5 +55,4 @@ ollama-install:
 	osx-install \
 	osx-cfg \
 	ssh \
-	install-me \
-	ollama-install
+	install-me
