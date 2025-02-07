@@ -6,6 +6,7 @@ clang
 docker
 docker-compose
 evince
+fmt
 ghostty
 git
 gnome-keyring
@@ -23,8 +24,10 @@ tmux
 ttf-intone-nerd
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
+ttf-lato
 ttf-meslo-nerd
 vlc
+xfce4-genmon-plugin
 yay
 zig
 zsh

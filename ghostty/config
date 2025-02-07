@@ -3,16 +3,10 @@ font-family-bold = monospace
 font-family-italic = monospace
 font-family-bold-italic = monospace
 
-font-feature = cv07
-font-feature = cv11
-font-feature = cv12
-font-feature = cv15
-font-feature = cv16
-
 font-style-bold = medium
 font-style-bold-italic = medium italic
 
-font-size = 16
+font-size = 12
 adjust-cell-height = 10%
 
 scrollback-limit = 8192

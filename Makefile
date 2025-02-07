@@ -44,6 +44,16 @@ install-me:
 	cd $(PWD)/me && \
 	$(GOINSTALL) $(PKG)
 
+build-font:
+	cd ~/Projects/Personal && \
+	[ -d Iosevka ] || git clone --depth 1 https://github.com/be5invis/Iosevka.git && \
+	cd Iosevka && \
+	git pull && \
+	npm install && \
+	cp $(CURDIR)/iosevka.toml ./private-build-plans.toml && \
+	npm run build -- ttf-unhinted::IosevkaCustom && \
+	cp -r dist/IosevkaCustom ~/.local/share/fonts
+
 .PHONY: \
 	list-pkgs \
 	base-pkgs \
@@ -55,4 +65,5 @@ install-me:
 	osx-install \
 	osx-cfg \
 	ssh \
-	install-me
+	install-me \
+	build-font

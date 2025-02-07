@@ -8,6 +8,7 @@ nvm
 otf-intel-one-mono
 postman-bin
 protoc-gen-go
+reiserfsprogs
 ttf-apple-emoji
 ttf-intel-one-mono
 vscodium-bin

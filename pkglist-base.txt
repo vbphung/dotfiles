@@ -125,7 +125,6 @@ python-pyqt5
 rebuild-detector
 reflector
 reflector-simple
-reiserfsprogs
 ristretto
 rsync
 rtkit

@@ -8,7 +8,7 @@ prettyecho Apply configs
 
 # Install fonts
 prettyecho Apply fonts configs
-symlink $DIR/fonts/fonts.xml $XDG_CONFIG_HOME/fontconfig/fonts.conf
+symlink $DIR/xfce4/fonts.xml $XDG_CONFIG_HOME/fontconfig/fonts.conf
 
 # Docker
 prettyecho Start Docker with systemd
@@ -45,12 +45,12 @@ symlink $DIR/neovim $XDG_CONFIG_HOME/nvim
 
 # Vscodium
 prettyecho Apply Vscodium configs
+
+sudo chown -R $(whoami) /opt/vscodium-bin
+
 symlink $DIR/vscodium/settings.json $XDG_CONFIG_HOME/VSCodium/User/settings.json
 symlink $DIR/vscodium/keybindings.json $XDG_CONFIG_HOME/VSCodium/User/keybindings.json
 symlink $DIR/vscodium/product.json $XDG_CONFIG_HOME/VSCodium/product.json
-
-sudo chown -R $(whoami) $(which codium)
-sudo chown -R $(whoami) $(which vscodium)
 
 # Xfce
 prettyecho Apply Xfce configs
