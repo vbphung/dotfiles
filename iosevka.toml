@@ -1,14 +1,14 @@
-[buildPlans.IosevkaCustom]
+[buildPlans.JimmyCoffee]
 family = "JimmyCoffee"
 spacing = "fontconfig-mono"
 serifs = "sans"
 noCvSs = false
 exportGlyphNames = true
 
-[buildPlans.IosevkaCustom.variants]
+[buildPlans.JimmyCoffee.variants]
 inherits = "ss14"
 
-[buildPlans.IosevkaCustom.variants.design]
+[buildPlans.JimmyCoffee.variants.design]
 one = "base"
 seven = "straight-serifless"
 zero = "long-dotted"
@@ -18,7 +18,7 @@ capital-g = "toothed-serifless-hooked"
 capital-j = "flat-hook-serifed"
 capital-k = "straight-serifless"
 capital-m = "slanted-sides-hanging-serifless"
-capital-n = "asymmetric-serifless"
+capital-n = "standard-serifless"
 capital-q = "crossing-curly-tailed"
 capital-r = "straight-serifless"
 capital-u = "toothed-serifless"
@@ -53,20 +53,20 @@ lig-equal-chain = "without-notch"
 lig-hyphen-chain = "without-notch"
 lig-plus-chain = "without-notch"
 
-[buildPlans.IosevkaCustom.ligations]
+[buildPlans.JimmyCoffee.ligations]
 inherits = "dlig"
 
-[buildPlans.IosevkaCustom.widths.Condensed]
+[buildPlans.JimmyCoffee.widths.Condensed]
 shape = 500
 menu = 3
 css = "condensed"
 
-[buildPlans.IosevkaCustom.widths.Normal]
+[buildPlans.JimmyCoffee.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IosevkaCustom.slopes.Upright]
+[buildPlans.JimmyCoffee.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"

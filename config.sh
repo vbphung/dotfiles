@@ -28,6 +28,7 @@ symlink $DIR/.zshrc $HOME/.zshrc
 prettyecho Apply Kitty configs
 symlink $DIR/kitty/kitty.conf $XDG_CONFIG_HOME/kitty/kitty.conf
 gitclone git@github.com:folke/tokyonight.nvim.git $XDG_CONFIG_HOME/kitty/tokyonight
+kitten themes --reload-in=all --config-file-name=themes.conf Gruvbox Material Dark Hard
 
 # Ghostty
 prettyecho Apply Ghostty configs
@@ -59,3 +60,15 @@ symlink $DIR/xfce4/keyboard_shortcuts.xml $XDG_CONFIG_HOME/xfce4/xfconf/xfce-per
 # Node.js
 prettyecho Enable pnpm
 sudo corepack enable pnpm
+
+# Ibus
+if ! grep -Fxq "GTK_IM_MODULE=ibus" /etc/environment; then
+    sudo tee -a /etc/environment >/dev/null <<EOF
+GTK_IM_MODULE=ibus
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=ibus
+QT4_IM_MODULE=ibus
+CLUTTER_IM_MODULE=ibus
+GLFW_IM_MODULE=ibus
+EOF
+fi

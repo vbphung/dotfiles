@@ -51,8 +51,8 @@ build-font:
 	git pull && \
 	npm install && \
 	cp $(CURDIR)/iosevka.toml ./private-build-plans.toml && \
-	npm run build -- ttf-unhinted::IosevkaCustom && \
-	cp -r dist/IosevkaCustom ~/.local/share/fonts
+	npm run build -- ttf-unhinted::JimmyCoffee && \
+	cp -r dist/JimmyCoffee ~/.local/share/fonts
 
 .PHONY: \
 	list-pkgs \

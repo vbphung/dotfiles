@@ -3,6 +3,7 @@ brave-bin
 dbvis
 discord-ptb
 dropbox
+ibus-bamboo
 migrate
 nvm
 otf-intel-one-mono
