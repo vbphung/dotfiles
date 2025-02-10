@@ -44,15 +44,23 @@ install-me:
 	cd $(PWD)/me && \
 	$(GOINSTALL) $(PKG)
 
+FONT := JimmyCoffee
+PERSONAL_DIR := ~/Projects/Personal
+
 build-font:
-	cd ~/Projects/Personal && \
-	[ -d Iosevka ] || git clone --depth 1 https://github.com/be5invis/Iosevka.git && \
+	cd $(PERSONAL_DIR) && \
+	[ -d Iosevka ] || git clone --depth 1 git@github.com:be5invis/Iosevka.git && \
 	cd Iosevka && \
 	git pull && \
 	npm install && \
 	cp $(CURDIR)/iosevka.toml ./private-build-plans.toml && \
-	npm run build -- ttf-unhinted::JimmyCoffee && \
-	cp -r dist/JimmyCoffee ~/.local/share/fonts
+	npm run build -- ttf-unhinted::$(FONT)
+
+install-font: build-font
+	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/.local/share/fonts
+
+osx-install-font: build-font
+	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/Library/Fonts
 
 .PHONY: \
 	list-pkgs \
@@ -66,4 +74,6 @@ build-font:
 	osx-cfg \
 	ssh \
 	install-me \
-	build-font
+	build-font \
+	install-font \
+	osx-install-font

@@ -1,7 +1,7 @@
-font-family = monospace
-font-family-bold = monospace
-font-family-italic = monospace
-font-family-bold-italic = monospace
+font-family = JimmyCoffee
+font-family-bold = JimmyCoffee
+font-family-italic = JimmyCoffee
+font-family-bold-italic = JimmyCoffee
 
 font-style-bold = medium
 font-style-bold-italic = medium italic

@@ -61,7 +61,7 @@
   "clangd.detectExtensionConflicts": false,
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "monospace",
+  "editor.fontFamily": "JimmyCoffee",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
