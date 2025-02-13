@@ -12,6 +12,7 @@ protoc-gen-go
 reiserfsprogs
 ttf-apple-emoji
 ttf-intel-one-mono
+ttf-merriweather-sans
 vscodium-bin
 woff-intel-one-mono
 woff2-intel-one-mono

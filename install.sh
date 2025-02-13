@@ -6,13 +6,16 @@ source $DIR/utils.sh
 
 prettyecho Install everything
 
+# Remove packages
+prettyecho Remove packages
+sudo pacman -Rns --noconfirm ttf-liberation noto-fonts-emoji
+
 # Essential packages
 prettyecho Install extra packages
 sudo pacman -S --noconfirm - <$DIR/pkglist.txt
 
 # Essential apps
 prettyecho Install AUR packages
-sudo pacman -Rns --noconfirm noto-fonts-emoji
 yay -S --answerdiff None --answerclean None --noconfirm - <$DIR/pkglist-aur.txt
 
 # Oh-My-Zsh
