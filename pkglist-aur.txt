@@ -10,6 +10,7 @@ otf-intel-one-mono
 postman-bin
 protoc-gen-go
 reiserfsprogs
+smartgit
 ttf-apple-emoji
 ttf-intel-one-mono
 ttf-merriweather-sans

@@ -1,6 +1,6 @@
 body,
 .markdown-body {
-  font-family: Merriweather Sans !important;
+  font-family: Merriweather Sans, monospace !important;
 }
 
 pre,

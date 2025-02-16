@@ -3,10 +3,10 @@ font-family-bold = JimmyCoffee
 font-family-italic = JimmyCoffee
 font-family-bold-italic = JimmyCoffee
 
-font-style-bold = medium
-font-style-bold-italic = medium italic
+font-style = medium
+font-style-italic = medium italic
 
-font-size = 16
+font-size = 14
 adjust-cell-height = 10%
 
 scrollback-limit = 8192
