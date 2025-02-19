@@ -27,6 +27,6 @@ window-decoration = true
 window-height = 48
 window-width = 128
 
-theme = gruvbox-material
+theme = rose-pine-moon
 background-opacity = 0.92
 background-blur-radius = 16

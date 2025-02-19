@@ -11,9 +11,27 @@ return {
 		end,
 	},
 	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+		config = function()
+			require("rose-pine").setup({
+				variant = "moon",
+				dark_variant = "moon",
+				dim_inactive_windows = false,
+				extend_background_behind_borders = true,
+				styles = {
+					bold = true,
+					italic = false,
+					transparency = false,
+				},
+			})
+			vim.cmd.colorscheme("rose-pine-moon")
+		end,
+	},
+	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "gruvbox-material",
+			colorscheme = "rose-pine-moon",
 		},
 	},
 }

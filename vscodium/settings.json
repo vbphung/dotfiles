@@ -80,7 +80,15 @@
   },
   "files.insertFinalNewline": true,
   "git.openRepositoryInParentFolders": "never",
-  "github.copilot.enable": { "*": true },
+  "github.copilot.enable": {
+    "*": true,
+    "cpp": false,
+    "go": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "gruvboxMaterial.italicComments": false,
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.enabled": false,
   "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
@@ -91,7 +99,7 @@
     "file:///home/jim/.dotfiles/vscodium/style.css",
     "file:///Users/jim/.dotfiles/vscodium/style.css"
   ],
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
