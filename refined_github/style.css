@@ -1,6 +1,5 @@
-body,
-.markdown-body {
-  font-family: Merriweather Sans, monospace !important;
+* {
+  font-family: JimmyCoffee Semi-Condensed, monospace !important;
 }
 
 pre,
@@ -9,7 +8,5 @@ code,
 .blob-code-content,
 .blob-code-marker,
 .react-code-text {
-  font-family: monospace !important;
-  font-weight: 500 !important;
   font-size: 14px !important;
 }

@@ -143,7 +143,6 @@ thunar-volman
 tldr
 ttf-bitstream-vera
 ttf-dejavu
-ttf-opensans
 tumbler
 unrar
 unzip

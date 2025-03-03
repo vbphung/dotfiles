@@ -11,7 +11,7 @@ inherits = "ss14"
 [buildPlans.JimmyCoffee.variants.design]
 one = "base"
 seven = "straight-serifless"
-zero = "long-dotted"
+zero = "slashed"
 capital-a = "straight-serifless"
 capital-d = "standard-serifless"
 capital-g = "toothed-serifless-hooked"
@@ -31,7 +31,7 @@ g = "single-storey-flat-hook-serifless"
 i = "serifed-semi-tailed"
 j = "flat-hook-serifed"
 k = "straight-serifless"
-l = "serifed"
+l = "serifed-semi-tailed"
 m = "serifless"
 n = "straight-serifless"
 r = "hookless-serifless"
@@ -69,6 +69,11 @@ css = "condensed"
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.JimmyCoffee.widths.SemiCondensed]
+shape = 548
+menu = 4
+css = "semi-condensed"
 
 [buildPlans.JimmyCoffee.slopes.Upright]
 angle = 0

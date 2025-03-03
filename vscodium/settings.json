@@ -51,10 +51,7 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml",
     "editor.formatOnSave": true
   },
-  "[zig]": {
-    "editor.defaultFormatter": "ziglang.vscode-zig",
-    "editor.formatOnSave": true
-  },
+  "[zig]": { "editor.formatOnSave": true },
   "catppuccin.accentColor": "flamingo",
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
@@ -64,7 +61,6 @@
   "editor.fontFamily": "JimmyCoffee",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
-  "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
   "editor.minimap.enabled": false,
@@ -94,7 +90,6 @@
   "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
   "sqltools.highlightQuery": false,
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontWeight": "500",
   "vscode_custom_css.imports": [
     "file:///home/jim/.dotfiles/vscodium/style.css",
     "file:///Users/jim/.dotfiles/vscodium/style.css"

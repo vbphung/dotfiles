@@ -60,6 +60,7 @@ install-font: build-font
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/.local/share/fonts
 
 osx-install-font: build-font
+	rm -rf ~/Library/Fonts/$(FONT)
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/Library/Fonts
 
 .PHONY: \

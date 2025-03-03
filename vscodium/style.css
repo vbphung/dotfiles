@@ -1,6 +1,6 @@
 :root {
   --ui-font-family: JimmyCoffee, monospace;
-  --ui-font-weight: 500;
+  --ui-font-weight: 400;
 }
 
 .monaco-tree .monaco-tree-row .label-name,

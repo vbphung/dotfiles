@@ -6,7 +6,7 @@
             <string>sans-serif</string>
         </test>
         <edit mode="assign" name="family" binding="same">
-            <string>Merriweather Sans</string>
+            <string>SF Pro Text</string>
         </edit>
     </match>
     <match target="pattern">

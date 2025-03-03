@@ -28,7 +28,7 @@ symlink $DIR/.zshrc $HOME/.zshrc
 prettyecho Apply Kitty configs
 symlink $DIR/kitty/kitty.conf $XDG_CONFIG_HOME/kitty/kitty.conf
 gitclone git@github.com:folke/tokyonight.nvim.git $XDG_CONFIG_HOME/kitty/tokyonight
-kitten themes --reload-in=all --config-file-name=themes.conf Gruvbox Material Dark Hard
+kitten themes --reload-in=all --config-file-name=themes.conf Rosé Pine Moon
 
 # Ghostty
 prettyecho Apply Ghostty configs

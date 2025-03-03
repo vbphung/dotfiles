@@ -1,4 +1,4 @@
-balena-etcher
+apple-fonts
 brave-bin
 dbvis
 discord-ptb
@@ -6,14 +6,7 @@ dropbox
 ibus-bamboo
 migrate
 nvm
-otf-intel-one-mono
-postman-bin
 protoc-gen-go
-reiserfsprogs
 smartgit
 ttf-apple-emoji
-ttf-intel-one-mono
-ttf-merriweather-sans
 vscodium-bin
-woff-intel-one-mono
-woff2-intel-one-mono
