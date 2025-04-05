@@ -4,10 +4,10 @@ font-family-italic = JimmyCoffee
 font-family-bold-italic = JimmyCoffee
 
 font-size = 17
-adjust-cell-height = 10%
 
 scrollback-limit = 8192
 
+shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 
@@ -24,6 +24,6 @@ window-decoration = true
 window-height = 48
 window-width = 128
 
-theme = rose-pine-moon
+theme = rose-pine
 background-opacity = 0.92
 background-blur-radius = 16

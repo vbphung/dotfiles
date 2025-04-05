@@ -1,8 +1,6 @@
 return {
 	{
 		"sainnhe/gruvbox-material",
-		lazy = true,
-		priority = 1000,
 		config = function()
 			vim.g.gruvbox_material_enable_italic = false
 			vim.g.gruvbox_material_disable_italic_comment = true
@@ -12,11 +10,10 @@ return {
 	},
 	{
 		"rose-pine/neovim",
-		name = "rose-pine",
 		config = function()
 			require("rose-pine").setup({
-				variant = "moon",
-				dark_variant = "moon",
+				variant = "main",
+				dark_variant = "main",
 				dim_inactive_windows = false,
 				extend_background_behind_borders = true,
 				styles = {
@@ -25,13 +22,13 @@ return {
 					transparency = false,
 				},
 			})
-			vim.cmd.colorscheme("rose-pine-moon")
+			vim.cmd.colorscheme("rose-pine")
 		end,
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "rose-pine-moon",
+			colorscheme = "rose-pine",
 		},
 	},
 }

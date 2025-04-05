@@ -33,6 +33,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.git" },
 		{ import = "lazyvim.plugins.extras.lang.go" },
 		{ import = "lazyvim.plugins.extras.lang.helm" },
+		{ import = "lazyvim.plugins.extras.lang.java" },
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		{ import = "lazyvim.plugins.extras.lang.nix" },
 		{ import = "lazyvim.plugins.extras.lang.ruby" },
@@ -43,18 +44,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.lang.yaml" },
 		{ import = "lazyvim.plugins.extras.lang.zig" },
-		{
-			"folke/tokyonight.nvim",
-			lazy = true,
-			opts = {
-				style = "moon",
-				styles = {
-					comments = { italic = false },
-					keywords = { italic = false },
-				},
-				transparent = false,
-			},
-		},
+		{ import = "lazyvim.plugins.extras.editor.neo-tree" },
 		{
 			"nvim-treesitter/nvim-treesitter",
 			opts = {
@@ -89,25 +79,40 @@ require("lazy").setup({
 		},
 		{
 			"nvim-lualine/lualine.nvim",
-			event = "VeryLazy",
-			opts = function()
-				return {
-					options = {
-						component_separators = "",
-						section_separators = "",
-					},
-				}
-			end,
+			opts = {
+				options = {
+					component_separators = "",
+					section_separators = "",
+				},
+			},
+		},
+		{
+			"folke/snacks.nvim",
+			opts = {
+				bigfile = { enabled = true },
+				dashboard = { enabled = true },
+				dim = { enabled = true },
+				explorer = { enabled = false },
+				indent = { enabled = true },
+				input = { enabled = true },
+				picker = { enabled = false },
+				notifier = { enabled = true },
+				quickfile = { enabled = true },
+				scope = { enabled = true },
+				scroll = { enabled = true },
+				statuscolumn = { enabled = true },
+				words = { enabled = true },
+			},
 		},
 	},
 	defaults = {
-		lazy = false,
+		lazy = true,
 		version = false,
 	},
-	install = { colorscheme = { "tokyonight", "habamax" } },
+	install = { colorscheme = {} },
 	checker = {
 		enabled = true,
-		notify = false,
+		notify = true,
 	},
 	performance = {
 		rtp = {

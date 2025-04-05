@@ -1,11 +1,11 @@
 apple-fonts
 brave-bin
+cloudflare-warp-bin
 dbvis
 discord-ptb
 dropbox
 ibus-bamboo
 migrate
-nvm
 protoc-gen-go
 smartgit
 ttf-apple-emoji

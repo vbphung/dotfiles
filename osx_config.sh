@@ -56,3 +56,12 @@ prettyecho Update RubyGems
 export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 export GEM_HOME=$HOME/.gem
 gem update --system
+
+# Java
+prettyecho Generalize JAVA_HOME
+JAVA_HOME=/opt/homebrew/opt/openjdk
+JAVA_HOME_SYMLINK=/usr/local/java
+if [ -n $JAVA_HOME ] && [ ! -L $JAVA_HOME_SYMLINK ]; then
+    sudo ln -s $JAVA_HOME $JAVA_HOME_SYMLINK
+    prettyecho JAVA_HOME at $JAVA_HOME_SYMLINK
+fi

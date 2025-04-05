@@ -1,5 +1,6 @@
 vim.g.autoformat = true
 vim.g.snacks_animate = false
+vim.g.lazyvim_picker = "snacks"
 vim.g.deprecation_warnings = false
 
 local opt = vim.opt

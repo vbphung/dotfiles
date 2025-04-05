@@ -20,6 +20,14 @@
     "editor.insertSpaces": false
   },
   "[ignore]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java",
+    "editor.formatOnSave": true
+  },
+  "[latex]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100
+  },
   "[lua]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua",
     "editor.formatOnSave": true
@@ -56,6 +64,7 @@
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
   "clangd.detectExtensionConflicts": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JimmyCoffee",
@@ -78,13 +87,15 @@
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.enable": {
     "*": true,
-    "cpp": false,
-    "go": true,
+    "cpp": true,
+    "go": false,
     "markdown": false,
     "plaintext": false,
     "scminput": false
   },
   "gruvboxMaterial.italicComments": false,
+  "jdk.java.onSave.organizeImports": false,
+  "jdk.jdkhome": "/usr/local/java",
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.enabled": false,
   "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
@@ -94,7 +105,7 @@
     "file:///home/jim/.dotfiles/vscodium/style.css",
     "file:///Users/jim/.dotfiles/vscodium/style.css"
   ],
-  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "workbench.colorTheme": "Rosé Pine (no italics)",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,

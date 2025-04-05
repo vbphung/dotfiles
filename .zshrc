@@ -34,7 +34,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 
 # Ruby
 export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/ruby/3.0.0/bin:$PATH
+export PATH=$GEM_HOME/ruby/3.3.7/bin:$PATH
 export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 # Directories
@@ -71,3 +71,7 @@ export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 cpprun() {
     clang++ -std=c++17 $1 -o out && ./out && rm -rf ./out
 }
+
+# Java
+export JAVA_HOME=/usr/local/java
+export PATH=$JAVA_HOME/bin:$PATH

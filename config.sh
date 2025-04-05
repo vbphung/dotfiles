@@ -61,14 +61,11 @@ symlink $DIR/xfce4/keyboard_shortcuts.xml $XDG_CONFIG_HOME/xfce4/xfconf/xfce-per
 prettyecho Enable pnpm
 sudo corepack enable pnpm
 
-# Ibus
-if ! grep -Fxq "GTK_IM_MODULE=ibus" /etc/environment; then
-    sudo tee -a /etc/environment >/dev/null <<EOF
-GTK_IM_MODULE=ibus
-QT_IM_MODULE=ibus
-XMODIFIERS=@im=ibus
-QT4_IM_MODULE=ibus
-CLUTTER_IM_MODULE=ibus
-GLFW_IM_MODULE=ibus
-EOF
+# Java
+prettyecho Generalize JAVA_HOME
+JAVA_HOME=/usr/lib/jvm/java-24-openjdk
+JAVA_HOME_SYMLINK=/usr/local/java
+if [ -n $JAVA_HOME ] && [ ! -L $JAVA_HOME_SYMLINK ]; then
+    sudo ln -s $JAVA_HOME $JAVA_HOME_SYMLINK
+    prettyecho JAVA_HOME at $JAVA_HOME_SYMLINK
 fi
