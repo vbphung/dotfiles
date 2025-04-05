@@ -55,6 +55,8 @@ build-font:
 	npm install && \
 	cp $(CURDIR)/iosevka.toml ./private-build-plans.toml && \
 	npm run build -- ttf-unhinted::$(FONT)
+	rm -rf $(FONT)
+	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) $(FONT)
 
 install-font: build-font
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/.local/share/fonts
