@@ -63,7 +63,11 @@ sudo corepack enable pnpm
 
 # Java
 prettyecho Generalize JAVA_HOME
-JAVA_HOME=/usr/lib/jvm/java-24-openjdk
+
+JDK=java-23-jdk
+sudo archlinux-java set $JDK
+
+JAVA_HOME=/usr/lib/jvm/$JDK
 JAVA_HOME_SYMLINK=/usr/local/java
 if [ -n $JAVA_HOME ] && [ ! -L $JAVA_HOME_SYMLINK ]; then
     sudo ln -s $JAVA_HOME $JAVA_HOME_SYMLINK
