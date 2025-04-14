@@ -4,6 +4,7 @@ cloudflare-warp-bin
 dbvis
 discord-ptb
 dropbox
+httpie-desktop-bin
 ibus-bamboo
 migrate
 protoc-gen-go

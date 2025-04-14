@@ -4,6 +4,7 @@ bluez-utils
 boost
 clang
 docker
+docker-buildx
 docker-compose
 evince
 fmt

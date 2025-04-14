@@ -59,9 +59,10 @@ build-font:
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) $(FONT)
 
 install-font: build-font
+	rm -rf ~/.local/share/fonts/$(FONT)
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/.local/share/fonts
 
-osx-install-font: build-font
+osx-install-font:
 	rm -rf ~/Library/Fonts/$(FONT)
 	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/Library/Fonts
 

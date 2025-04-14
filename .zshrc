@@ -75,3 +75,6 @@ cpprun() {
 # Java
 export JAVA_HOME=/usr/local/java
 export PATH=$JAVA_HOME/bin:$PATH
+
+export SDKMAN_DIR=$HOME/.sdkman
+[[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && source $SDKMAN_DIR/bin/sdkman-init.sh
