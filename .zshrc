@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Ibus
+# IBus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
@@ -78,3 +78,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 export SDKMAN_DIR=$HOME/.sdkman
 [[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && source $SDKMAN_DIR/bin/sdkman-init.sh
+
+# Cuda
+export PATH=/opt/cuda/bin:$PATH
+export CUDA_HOME=/opt/cuda

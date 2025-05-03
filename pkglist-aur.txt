@@ -1,8 +1,6 @@
 apple-fonts
 brave-bin
-cloudflare-warp-bin
 dbvis
-discord-ptb
 dropbox
 httpie-desktop-bin
 ibus-bamboo
@@ -10,4 +8,5 @@ migrate
 protoc-gen-go
 smartgit
 ttf-apple-emoji
+ttf-commissioner
 vscodium-bin

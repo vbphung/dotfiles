@@ -1,8 +1,18 @@
 {
   "Lua.diagnostics.globals": ["vim"],
+  "[cmake]": {
+    "editor.defaultFormatter": "josetr.cmake-language-support-vscode",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": { "strings": true }
+  },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[cuda-cpp]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordBasedSuggestions": "off"
@@ -84,6 +94,9 @@
   "files.associations": {
     "*.conf": "shellscript",
     "*.cql": "sql",
+    "*.cu": "cpp",
+    "*.hook": "shellscript",
+    "*.rules": "shellscript",
     ".clangd": "yaml",
     "config": "shellscript"
   },

@@ -44,13 +44,14 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.lang.yaml" },
 		{ import = "lazyvim.plugins.extras.lang.zig" },
+		{ import = "lazyvim.plugins.extras.lang.omnisharp" },
 		{ import = "lazyvim.plugins.extras.editor.neo-tree" },
 		{
 			"nvim-treesitter/nvim-treesitter",
 			opts = {
 				highlight = { enable = true },
 				indent = { enable = true },
-				ensure_installed = { "graphql" },
+				ensure_installed = { "graphql", "c_sharp" },
 			},
 		},
 		{
@@ -95,7 +96,7 @@ require("lazy").setup({
 				explorer = { enabled = false },
 				indent = { enabled = true },
 				input = { enabled = true },
-				picker = { enabled = false },
+				picker = { enabled = true },
 				notifier = { enabled = true },
 				quickfile = { enabled = true },
 				scope = { enabled = true },

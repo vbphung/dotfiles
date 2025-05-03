@@ -28,7 +28,7 @@ symlink $DIR/.zshrc $HOME/.zshrc
 prettyecho Apply Kitty configs
 symlink $DIR/kitty/kitty.conf $XDG_CONFIG_HOME/kitty/kitty.conf
 gitclone git@github.com:folke/tokyonight.nvim.git $XDG_CONFIG_HOME/kitty/tokyonight
-kitten themes --reload-in=all --config-file-name=themes.conf Rosé Pine Moon
+kitten themes --reload-in=all --config-file-name=themes.conf Rosé Pine
 
 # Ghostty
 prettyecho Apply Ghostty configs
@@ -73,3 +73,9 @@ if [ -n $JAVA_HOME ] && [ ! -L $JAVA_HOME_SYMLINK ]; then
     sudo ln -s $JAVA_HOME $JAVA_HOME_SYMLINK
     prettyecho JAVA_HOME at $JAVA_HOME_SYMLINK
 fi
+
+# Nvidia
+prettyecho Apply Nvidia configs
+sudo mv $DIR/nvidia/nvidia.hook /etc/pacman.d/hooks/nvidia.hook
+sudo mv $DIR/nvidia/70-nvidia.rules /etc/udev/rules.d/70-nvidia.rules
+nvidia-settings --load-config-only
