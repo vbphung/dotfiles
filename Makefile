@@ -44,27 +44,36 @@ install-me:
 	cd $(PWD)/me && \
 	$(GOINSTALL) $(PKG)
 
-FONT := JimmyCoffee
 PERSONAL_DIR := ~/Projects/Personal
 
-build-font:
+define build_font_func
 	cd $(PERSONAL_DIR) && \
 	[ -d Iosevka ] || git clone --depth 1 git@github.com:be5invis/Iosevka.git && \
 	cd Iosevka && \
 	git pull && \
 	npm install && \
-	cp $(CURDIR)/iosevka.toml ./private-build-plans.toml && \
-	npm run build -- ttf-unhinted::$(FONT)
-	rm -rf $(FONT)
-	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) $(FONT)
+	cp $(CURDIR)/fonts/$(1).toml ./private-build-plans.toml && \
+	npm run build -- ttf::$(1)
+	rm -rf fonts/$(1)
+	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(1) fonts/$(1)
+endef
 
-install-font: build-font
-	rm -rf ~/.local/share/fonts/$(FONT)
-	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/.local/share/fonts
+build-fonts:
+	$(call build_font_func,ChiecAoMeVuaDanXong)
+	$(call build_font_func,LySuaNongNgoaiBanCong)
 
-osx-install-font:
-	rm -rf ~/Library/Fonts/$(FONT)
-	cp -r $(PERSONAL_DIR)/Iosevka/dist/$(FONT) ~/Library/Fonts
+define copy_font
+	rm -rf $(2)/$(1)
+	cp -r fonts/$(1) $(2)
+endef
+
+install-fonts: build-fonts
+	$(call copy_font,ChiecAoMeVuaDanXong,~/.local/share/fonts)
+	$(call copy_font,LySuaNongNgoaiBanCong,~/.local/share/fonts)
+
+osx-install-fonts:
+	$(call copy_font,ChiecAoMeVuaDanXong,~/Library/Fonts)
+	$(call copy_font,LySuaNongNgoaiBanCong,~/Library/Fonts)
 
 .PHONY: \
 	list-pkgs \
@@ -78,6 +87,6 @@ osx-install-font:
 	osx-cfg \
 	ssh \
 	install-me \
-	build-font \
-	install-font \
-	osx-install-font
+	build-fonts \
+	install-fonts \
+	osx-install-fonts

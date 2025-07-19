@@ -58,7 +58,7 @@ alias dclean="docker stop $(docker ps -aq) && docker rm --force $(docker ps -aq)
 # Git
 alias gclear="git reset && git clean -fd && git checkout -- ."
 alias gcommit="git add . && git commit -m"
-alias gamend="git add . && git commit --amend"
+alias gamend="git add . && git commit --amend --no-edit"
 alias gpush="git push --force"
 
 # Pyenv

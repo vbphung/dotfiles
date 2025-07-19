@@ -6,6 +6,7 @@ boost
 clang
 cmake
 cuda
+dbeaver
 discord
 docker
 docker-buildx
@@ -35,6 +36,7 @@ ollama
 opencv
 openssh
 pyenv
+python-pip
 ruby
 telegram-desktop
 texlive-basic
@@ -60,9 +62,12 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 tmux
+ttf-iosevka-nerd
+ttf-lato
 ttf-opensans
 upx
 vlc
+wezterm
 yay
 zig
 zsh

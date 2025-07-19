@@ -1,9 +1,9 @@
 :root {
-  --ui-font-family: JimmyCoffee, monospace;
+  --ui-font-family: LySuaNongNgoaiBanCong, monospace;
   --ui-font-weight: 400;
 }
 
-.monaco-tree .monaco-tree-row .label-name,
+.monaco-tree .monaco-tree-row .labe-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;

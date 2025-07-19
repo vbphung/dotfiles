@@ -6,7 +6,7 @@
             <string>sans-serif</string>
         </test>
         <edit mode="assign" name="family" binding="same">
-            <string>SF Pro Text</string>
+            <string>Lato</string>
         </edit>
     </match>
     <match target="pattern">
@@ -14,7 +14,7 @@
             <string>monospace</string>
         </test>
         <edit mode="assign" name="family" binding="same">
-            <string>JimmyCoffee</string>
+            <string>ChiecAoMeVuaDanXong</string>
         </edit>
     </match>
 </fontconfig>

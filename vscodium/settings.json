@@ -80,7 +80,7 @@
   "docker.lsp.telemetry": "off",
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "JimmyCoffee",
+  "editor.fontFamily": "LySuaNongNgoaiBanCong",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
