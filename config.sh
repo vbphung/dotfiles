@@ -16,6 +16,10 @@ sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
 
+# Bluetooth
+prettyecho Start Bluetooth with systemd
+sudo systemctl enable bluetooth.service
+
 # Git
 prettyecho Apply Git configs
 symlink $DIR/.gitconfig $HOME/.gitconfig
@@ -76,6 +80,6 @@ fi
 
 # Nvidia
 prettyecho Apply Nvidia configs
-sudo mv $DIR/nvidia/nvidia.hook /etc/pacman.d/hooks/nvidia.hook
-sudo mv $DIR/nvidia/70-nvidia.rules /etc/udev/rules.d/70-nvidia.rules
+sudo cp $DIR/nvidia/nvidia.hook /etc/pacman.d/hooks/nvidia.hook
+sudo cp $DIR/nvidia/70-nvidia.rules /etc/udev/rules.d/70-nvidia.rules
 nvidia-settings --load-config-only

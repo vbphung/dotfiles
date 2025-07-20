@@ -24,6 +24,7 @@ jdk-openjdk
 jq
 kitty
 lib32-nvidia-utils
+libreoffice-still
 neovim
 nodejs
 npm
@@ -62,9 +63,8 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 tmux
-ttf-iosevka-nerd
+ttf-firacode-nerd
 ttf-lato
-ttf-opensans
 upx
 vlc
 wezterm

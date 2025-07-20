@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
 :root {
-  --ui-font-family: LySuaNongNgoaiBanCong, monospace;
+  --ui-font-family: FiraCode Nerd Font, Fira Code, monospace;
   --ui-font-weight: 400;
 }
 
-.monaco-tree .monaco-tree-row .labe-name,
+.monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;
