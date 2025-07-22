@@ -68,36 +68,6 @@ lig-single-arrow-bar = "without-notch"
 [buildPlans.LySuaNongNgoaiBanCong.ligations]
 inherits = "dlig"
 
-[buildPlans.LySuaNongNgoaiBanCong.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.LySuaNongNgoaiBanCong.weights.Bold]
-shape = 700
-menu = 700
-css = 700
-
-[buildPlans.LySuaNongNgoaiBanCong.weights.Medium]
-shape = 500
-menu = 500
-css = 500
-
-[buildPlans.LySuaNongNgoaiBanCong.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
-[buildPlans.LySuaNongNgoaiBanCong.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
-
-[buildPlans.LySuaNongNgoaiBanCong.weights.Heavy]
-shape = 900
-menu = 900
-css = 900
-
 [buildPlans.LySuaNongNgoaiBanCong.widths.Condensed]
 shape = 500
 menu = 3
