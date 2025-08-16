@@ -14,7 +14,7 @@
             <string>monospace</string>
         </test>
         <edit mode="assign" name="family" binding="same">
-            <string>FiraCode Nerd Font</string>
+            <string>LySuaNongNgoaiBanCong</string>
         </edit>
     </match>
 </fontconfig>

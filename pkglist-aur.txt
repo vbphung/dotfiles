@@ -3,14 +3,9 @@ dbvis
 dropbox
 electron33
 etcher-bin
-gcc13
-gcc13-libs
-httpie-desktop-bin
-ibus-bamboo
+maplemono-nf
 migrate
-notesnook
 protoc-gen-go
-smartgit
 ttf-apple-emoji
 ttf-commissioner
 ttfautohint

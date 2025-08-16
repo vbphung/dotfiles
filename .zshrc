@@ -13,14 +13,6 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# IBus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-export CLUTTER_IM_MODULE=ibus
-export QT4_IM_MODULE=ibus
-export GLFW_IM_MODULE=ibus
-
 # Brew
 export PATH=/opt/homebrew/bin:$PATH
 
@@ -82,3 +74,6 @@ export SDKMAN_DIR=$HOME/.sdkman
 # Cuda
 export PATH=/opt/cuda/bin:$PATH
 export CUDA_HOME=/opt/cuda
+
+# Arch
+yi() { yay -S --answerdiff None --answerclean None --noconfirm $@; }

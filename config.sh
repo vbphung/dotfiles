@@ -28,16 +28,10 @@ symlink $DIR/.gitconfig $HOME/.gitconfig
 prettyecho Apply Zsh configs
 symlink $DIR/.zshrc $HOME/.zshrc
 
-# Kitty
-prettyecho Apply Kitty configs
-symlink $DIR/kitty/kitty.conf $XDG_CONFIG_HOME/kitty/kitty.conf
-gitclone git@github.com:folke/tokyonight.nvim.git $XDG_CONFIG_HOME/kitty/tokyonight
-kitten themes --reload-in=all --config-file-name=themes.conf Rosé Pine
-
-# Ghostty
-prettyecho Apply Ghostty configs
-symlink $DIR/ghostty/config $XDG_CONFIG_HOME/ghostty/config
-symlink $XDG_CONFIG_HOME/kitty/tokyonight/extras/ghostty/tokyonight_moon $XDG_CONFIG_HOME/ghostty/themes/tokyonight_moon
+# Alacritty
+prettyecho Apply Alacritty configs
+symlink $DIR/alacritty/alacritty.toml $XDG_CONFIG_HOME/alacritty/alacritty.toml
+gitclone git@github.com:rose-pine/alacritty.git $XDG_CONFIG_HOME/alacritty/rose-pine
 
 # Tmux
 prettyecho Apply Tmux configs

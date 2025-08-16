@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-
 * {
-  font-family: FiraCode Nerd Font, Fira Code, monospace !important;
+  font-family: monospace !important;
 }
 
 pre,

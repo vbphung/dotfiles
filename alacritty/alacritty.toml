@@ -1,0 +1,27 @@
+[general]
+import = ["~/.config/alacritty/rose-pine/dist/rose-pine.toml"]
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.3"
+
+[font]
+size = 17
+normal = { family = "Maple Mono NF", style = "Regular" }
+bold = { family = "Maple Mono NF", style = "SemiBold" }
+italic = { family = "Maple Mono NF", style = "Italic" }
+bold_italic = { family = "Maple Mono NF", style = "SemiBold Italic" }
+
+[scrolling]
+history = 32768
+
+[cursor]
+style = { shape = "Beam", blinking = "Never" }
+
+[window]
+blur = true
+decorations = "Full"
+dimensions = { columns = 160, lines = 36 }
+dynamic_padding = true
+opacity = 0.92
+padding = { x = 4, y = 4 }
+startup_mode = "Windowed"

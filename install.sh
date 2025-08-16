@@ -11,11 +11,8 @@ prettyecho Remove packages
 sudo pacman -Rns --noconfirm ttf-liberation noto-fonts-emoji
 
 # Essential packages
-prettyecho Install extra packages
-sudo pacman -S --noconfirm - <$DIR/pkglist.txt
-
-# Essential apps
-prettyecho Install AUR packages
+prettyecho Install packages
+yay -S --answerdiff None --answerclean None --noconfirm - <$DIR/pkglist.txt
 yay -S --answerdiff None --answerclean None --noconfirm - <$DIR/pkglist-aur.txt
 
 # Oh-My-Zsh

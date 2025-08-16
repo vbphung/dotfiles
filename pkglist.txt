@@ -1,3 +1,4 @@
+alacritty
 aspnet-runtime
 blueman
 bluez
@@ -13,8 +14,14 @@ docker-buildx
 docker-compose
 dotnet-sdk
 evince
+fcitx5
+fcitx5-chinese-addons
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-pinyin-zhwiki
+fcitx5-qt
+fcitx5-unikey
 fmt
-ghostty
 git
 gnome-keyring
 go
@@ -22,7 +29,6 @@ gradle
 jdk21-openjdk
 jdk-openjdk
 jq
-kitty
 lib32-nvidia-utils
 libreoffice-still
 neovim
@@ -33,7 +39,6 @@ nvidia-settings
 nvidia-utils
 nvm
 obsidian
-ollama
 opencv
 openssh
 pyenv
@@ -63,11 +68,10 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 tmux
-ttf-firacode-nerd
 ttf-lato
 upx
 vlc
-wezterm
+vlc-plugin-ffmpeg
 yay
 zig
 zsh

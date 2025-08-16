@@ -1,9 +1,10 @@
 {
-  "Lua.diagnostics.globals": ["vim"],
   "[cmake]": {
     "editor.defaultFormatter": "josetr.cmake-language-support-vscode",
     "editor.formatOnSave": true,
-    "editor.quickSuggestions": { "strings": true }
+    "editor.quickSuggestions": {
+      "strings": true
+    }
   },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
@@ -12,24 +13,37 @@
     "editor.suggest.insertMode": "replace",
     "editor.wordBasedSuggestions": "off"
   },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true,
+    "editor.maxTokenizationLineLength": 2500
+  },
   "[cuda-cpp]": {
     "editor.semanticHighlighting.enabled": true,
     "editor.suggest.insertMode": "replace",
     "editor.wordBasedSuggestions": "off"
   },
-  "[dockerfile]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
-  "[dotenv]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "[go.mod]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true
   },
   "[go]": {
-    "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    },
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
     "editor.insertSpaces": false
   },
-  "[ignore]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "[java]": {
     "editor.defaultFormatter": "Oracle.oracle-java",
     "editor.formatOnSave": true
@@ -42,7 +56,9 @@
     "editor.defaultFormatter": "JohnnyMorganz.stylua",
     "editor.formatOnSave": true
   },
-  "[properties]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "[proto3]": {
     "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true
@@ -53,7 +69,9 @@
     "editor.formatOnSave": true
   },
   "[rust]": {
-    "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    },
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
   },
@@ -69,7 +87,9 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml",
     "editor.formatOnSave": true
   },
-  "[zig]": { "editor.formatOnSave": true },
+  "[zig]": {
+    "editor.formatOnSave": true
+  },
   "catppuccin.accentColor": "flamingo",
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
@@ -78,9 +98,12 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.lsp.experimental.vulnerabilityScanning": false,
   "docker.lsp.telemetry": "off",
-  "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.sort.json": "always"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "LySuaNongNgoaiBanCong",
+  "editor.fontFamily": "Maple Mono NF",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
@@ -92,12 +115,12 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
+    ".clangd": "yaml",
     "*.conf": "shellscript",
     "*.cql": "sql",
     "*.cu": "cpp",
     "*.hook": "shellscript",
     "*.rules": "shellscript",
-    ".clangd": "yaml",
     "config": "shellscript"
   },
   "files.insertFinalNewline": true,
@@ -114,9 +137,13 @@
   "gruvboxMaterial.italicComments": false,
   "jdk.java.onSave.organizeImports": false,
   "jdk.jdkhome": "/usr/local/java",
+  "Lua.diagnostics.globals": ["vim"],
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.enabled": false,
-  "sqltools.format": { "language": "db2", "linesBetweenQueries": 2 },
+  "sqltools.format": {
+    "language": "db2",
+    "linesBetweenQueries": 2
+  },
   "sqltools.highlightQuery": false,
   "telemetry.feedback.enabled": false,
   "terminal.integrated.fontSize": 15,
