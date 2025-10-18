@@ -10,7 +10,7 @@ fresh:
 	chmod +x ./fresh.sh ./install.sh ./config.sh
 	./fresh.sh
 
-install:
+install: install-fonts
 	chmod +x ./install.sh
 	./install.sh
 
@@ -25,7 +25,7 @@ osx-fresh:
 	chmod +x ./osx_fresh.sh ./osx_install.sh ./osx_config.sh
 	./osx_fresh.sh
 
-osx-install:
+osx-install: osx-install-fonts
 	chmod +x ./osx_install.sh
 	./osx_install.sh
 
@@ -67,13 +67,16 @@ define copy_font
 	cp -r fonts/$(1) $(2)
 endef
 
-install-fonts: build-fonts
+install-fonts:
 	$(call copy_font,ChiecAoMeVuaDanXong,~/.local/share/fonts)
 	$(call copy_font,LySuaNongNgoaiBanCong,~/.local/share/fonts)
 
 osx-install-fonts:
 	$(call copy_font,ChiecAoMeVuaDanXong,~/Library/Fonts)
 	$(call copy_font,LySuaNongNgoaiBanCong,~/Library/Fonts)
+
+list-code-exts:
+	codium --list-extensions > $(PWD)/vscodium/extensions.txt
 
 .PHONY: \
 	list-pkgs \
@@ -89,4 +92,5 @@ osx-install-fonts:
 	install-me \
 	build-fonts \
 	install-fonts \
-	osx-install-fonts
+	osx-install-fonts \
+	list-code-exts

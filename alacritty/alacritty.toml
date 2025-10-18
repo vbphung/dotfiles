@@ -1,15 +1,15 @@
 [general]
-import = ["~/.config/alacritty/rose-pine/dist/rose-pine.toml"]
+import = ["~/tokyonight/extras/alacritty/tokyonight_night.toml"]
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.3"
 
 [font]
-size = 17
-normal = { family = "Maple Mono NF", style = "Regular" }
-bold = { family = "Maple Mono NF", style = "SemiBold" }
-italic = { family = "Maple Mono NF", style = "Italic" }
-bold_italic = { family = "Maple Mono NF", style = "SemiBold Italic" }
+size = 16
+normal = { family = "MonaspiceRn NF", style = "Regular" }
+bold = { family = "MonaspiceRn NF", style = "SemiBold" }
+italic = { family = "MonaspiceRn NF", style = "Italic" }
+bold_italic = { family = "MonaspiceRn NF", style = "SemiBold Italic" }
 
 [scrolling]
 history = 32768

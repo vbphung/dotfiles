@@ -24,7 +24,6 @@ symlink $DIR/.zshrc $HOME/.zshrc
 # Alacritty
 prettyecho Apply Alacritty configs
 symlink $DIR/alacritty/alacritty.toml $CONFIG_HOME/alacritty/alacritty.toml
-gitclone git@github.com:rose-pine/alacritty.git $CONFIG_HOME/alacritty/rose-pine
 
 # Tmux
 prettyecho Apply Tmux configs

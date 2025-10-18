@@ -1,7 +1,6 @@
 brave-bin
 dbvis
 dropbox
-electron33
 etcher-bin
 maplemono-nf
 migrate

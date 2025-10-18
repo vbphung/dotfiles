@@ -23,7 +23,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
+		{
+			"LazyVim/LazyVim",
+			import = "lazyvim.plugins",
+			opts = {
+				colorscheme = "tokyonight-night",
+			},
+		},
 		{ import = "plugins" },
 		{ import = "lazyvim.plugins.extras.formatting.prettier" },
 		{ import = "lazyvim.plugins.extras.lang.clangd" },
@@ -46,71 +52,12 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.zig" },
 		{ import = "lazyvim.plugins.extras.lang.omnisharp" },
 		{ import = "lazyvim.plugins.extras.editor.neo-tree" },
-		{
-			"nvim-treesitter/nvim-treesitter",
-			opts = {
-				highlight = { enable = true },
-				indent = { enable = true },
-				ensure_installed = { "graphql", "c_sharp" },
-			},
-		},
-		{
-			"nvim-neo-tree/neo-tree.nvim",
-			opts = {
-				filesystem = {
-					filtered_items = {
-						visible = true,
-						show_hidden_count = true,
-						hide_dotfiles = false,
-						hide_gitignored = false,
-						hide_by_name = {},
-						never_show = {},
-					},
-				},
-			},
-			keys = {
-				{
-					"<leader>e",
-					function()
-						require("neo-tree.command").execute({ action = "focus" })
-					end,
-					desc = "Explorer NeoTree",
-				},
-			},
-		},
-		{
-			"nvim-lualine/lualine.nvim",
-			opts = {
-				options = {
-					component_separators = "",
-					section_separators = "",
-				},
-			},
-		},
-		{
-			"folke/snacks.nvim",
-			opts = {
-				bigfile = { enabled = true },
-				dashboard = { enabled = true },
-				dim = { enabled = true },
-				explorer = { enabled = false },
-				indent = { enabled = true },
-				input = { enabled = true },
-				picker = { enabled = true },
-				notifier = { enabled = true },
-				quickfile = { enabled = true },
-				scope = { enabled = true },
-				scroll = { enabled = true },
-				statuscolumn = { enabled = true },
-				words = { enabled = true },
-			},
-		},
 	},
 	defaults = {
 		lazy = true,
 		version = false,
 	},
-	install = { colorscheme = {} },
+	install = { colorscheme = { "tokyonight" } },
 	checker = {
 		enabled = true,
 		notify = true,

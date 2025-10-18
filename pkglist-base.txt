@@ -105,6 +105,9 @@ noto-fonts-extra
 nss-mdns
 ntfs-3g
 ntp
+nvidia
+nvidia-hook
+nvidia-inst
 pacman-contrib
 parole
 pavucontrol
@@ -118,10 +121,9 @@ poppler-glib
 power-profiles-daemon
 pv
 python
-python-capng
 python-defusedxml
 python-packaging
-python-pyqt5
+python-pyqt6
 rebuild-detector
 reflector
 reflector-simple
@@ -143,6 +145,7 @@ thunar-volman
 tldr
 ttf-bitstream-vera
 ttf-dejavu
+ttf-opensans
 tumbler
 unrar
 unzip

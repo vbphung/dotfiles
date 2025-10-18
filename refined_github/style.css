@@ -1,12 +1,4 @@
 * {
   font-family: monospace !important;
-}
-
-pre,
-code,
-.blob-code,
-.blob-code-content,
-.blob-code-marker,
-.react-code-text {
-  font-size: 14px !important;
+  font-style: italic !important;
 }

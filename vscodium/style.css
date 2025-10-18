@@ -1,12 +1,14 @@
 :root {
   --ui-font-family: monospace;
   --ui-font-weight: 400;
+  --ui-font-style: italic;
 }
 
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;
+  font-style: var(--ui-font-style) !important;
 }
 
 .monaco-editor-hover,
@@ -36,6 +38,7 @@
 .search-label {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;
+  font-style: var(--ui-font-style) !important;
   display: block;
 }
 
@@ -62,6 +65,7 @@
 .quick-input-filter .monaco-inputbox {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;
+  font-style: var(--ui-font-style) !important;
   border-radius: 8px !important;
   padding: 4px !important;
   border: none !important;
@@ -91,6 +95,7 @@
 .monaco-icon-label-container .monaco-icon-name-container .label-name {
   font-family: var(--ui-font-family) !important;
   font-weight: var(--ui-font-weight) !important;
+  font-style: var(--ui-font-style) !important;
 }
 
 #status\.notifications,

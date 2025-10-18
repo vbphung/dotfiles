@@ -5,10 +5,12 @@ DIR=$(pwd)
 source $DIR/utils.sh
 prettyecho Generate SSH key
 
-ssh-keygen -t ed25519 -C "$USER@$(hostname)" -f $HOME/.ssh/id_ed25519
+KEY_PATH=$HOME/.ssh/id_rsa
 
-eval $(ssh-agent -s)
+if [ ! -f $KEY_PATH ]; then
+    ssh-keygen -t rsa -b 4096 -C "$USER@$(hostname)" -f $KEY_PATH
+    eval $(ssh-agent -s)
+    ssh-add $KEY_PATH
+fi
 
-ssh-add $HOME/.ssh/id_ed25519
-
-cat $HOME/.ssh/id_ed25519.pub
+cat $KEY_PATH.pub

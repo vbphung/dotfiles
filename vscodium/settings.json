@@ -14,7 +14,7 @@
     "editor.wordBasedSuggestions": "off"
   },
   "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
     "editor.formatOnSave": true,
     "editor.maxTokenizationLineLength": 2500
   },
@@ -87,6 +87,9 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml",
     "editor.formatOnSave": true
   },
+  "[xml]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
   "[zig]": {
     "editor.formatOnSave": true
   },
@@ -95,6 +98,7 @@
   "catppuccin.italicKeywords": false,
   "chat.editing.confirmEditRequestRemoval": false,
   "clangd.detectExtensionConflicts": false,
+  "csharpier.enableDiagnostics": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.lsp.experimental.vulnerabilityScanning": false,
   "docker.lsp.telemetry": "off",
@@ -102,10 +106,11 @@
     "source.organizeImports": "always",
     "source.sort.json": "always"
   },
+  "editor.codeLens": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Maple Mono NF",
+  "editor.fontFamily": "MonaspiceRn NF",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
   "editor.minimap.enabled": false,
@@ -146,12 +151,13 @@
   },
   "sqltools.highlightQuery": false,
   "telemetry.feedback.enabled": false,
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "normal",
   "vscode_custom_css.imports": [
     "file:///home/jim/.dotfiles/vscodium/style.css",
     "file:///Users/jim/.dotfiles/vscodium/style.css"
   ],
-  "workbench.colorTheme": "Rosé Pine (no italics)",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
